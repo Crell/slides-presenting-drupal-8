@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <link rel="stylesheet" href="css/reveal.min.css">
-    <link rel="stylesheet" href="css/theme/default.css" id="theme">
+    <link rel="stylesheet" href="palantir/palantir.css" id="theme">
 
     <!-- For syntax highlighting -->
     <link rel="stylesheet" href="lib/css/zenburn.css">
@@ -27,6 +27,23 @@
     <!--[if lt IE 9]>
     <script src="lib/js/html5shiv.js"></script>
     <![endif]-->
+
+
+    <style type="text/css">
+
+    ul.inline {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    }
+
+    ul.inline li {
+      display: inline;
+    }
+
+    </style>
+
   </head>
   <body>
     <div class="reveal">
@@ -50,20 +67,20 @@
         </section>
 
         <section>
-          Drupal 8 logo
+          <img src="assets/drupal-8-logo.png" alt="Drupal 8" data-credit="https://drupal.org/node/2119739" />
         </section>
 
         <section>
           <section>
             <p>What's wrong with Drupal 7?</p>
-            Drupal 7 logo
+            <img src="assets/drupal-7-logo.jpg" alt="Drupal 7" data-credit="https://association.drupal.org/files/drupal-7-logo.jpg" />
           </section>
 
-          <section fullscreen-img="assets/drupalsites.png" class="fullscreen">
+          <section>
             <h3 class="top-align inverse">2% of the Web runs Drupal</h3>
             <img src="assets/drupalsites.png" alt="2% of the web runs Drupal" />
           </section>
-          <section fullscreen-img="assets/drupalcon-denver.jpg" class="fullscreen">
+          <section>
             <img src="assets/drupalcon-denver.jpg" alt="Drupal's community is enormous" />
           </section>
 
@@ -179,7 +196,7 @@
             <h2>Did we mention WYSIWYG in core??</h2>
           </section>
           <section>
-            <video preload="auto" width="100%" controls>
+            <video preload="auto" width="1024" controls>
               <source src="assets/edit-form-changes.m4v" />
             </video>
           </section>
@@ -189,7 +206,7 @@
             <h1 class="fragment">Ever</h1>
           </section>
           <section>
-            <video preload="auto" width="100%" controls>
+            <video preload="auto" width="1024" controls>
               <source src="assets/drupal8-accessibility.m4v" />
             </video>
             <aside class="notes">
@@ -228,18 +245,17 @@
           </section>
           <section>
             <h2>Out with the old...</h2>
-            Make this list inline.
-            <ul>
-              <li class="fragment">IE 6 graphic, with cross out</li>
-              <li class="fragment">IE 7 graphic, with cross out</li>
-              <li class="fragment">IE 8 graphic, with cross out</li>
+            <ul class="inline">
+              <li class="fragment"><img src="assets/ie6-crossed.jpg" alt="Good bye, IE 6" style="width: 250px" data-credit="http://hanifhasan91.blogspot.com/2012/11/5-prediction-web-in-2012.html" /></li>
+              <li class="fragment"><img src="assets/ie-crossed.jpg" alt="Good bye, IE 7" style="width: 250px" data-credit="http://www.nursingjobs.us/blog/ie7-users-we-need-to-talk/" /></li>
+              <li class="fragment"><img src="assets/ie8-crossed.jpg" alt="Good bye, IE 8" style="width: 250px" data-credit="http://www.promenadedln.com/microsoft/internet-explorer-8-offre-une-nouvelle-vision-des-sites-internet-477.html" /></li>
             </ul>
           </section>
           <section>
             <h2>In with the new</h2>
-            <ul>
-              <li class="fragment">HTML5 graphic</li>
-              <li class="fragment">CSS3 graphic</li>
+            <ul class="inline" style="background: white;">
+              <li class="fragment"><img src="assets/html5-logo-wordmark.svg" alt="HTML5" style="width: 250px" data-credit="http://commons.wikimedia.org/wiki/File:HTML5_logo_and_wordmark.svg" /></li>
+              <li class="fragment"><img src="assets/css3-logo-wordmark.svg" alt="CSS3" style="width: 250px" data-credit="http://ohdoylerules.com/web/css3-badge-logo-in-svg" /></li>
               <li class="fragment">RWD graphic</li>
             </ul>
             <p class="fragment">(There's an <a href="http://drupal.org/project/ie8">IE8 module</a> for the front-end if you really need)</p>
@@ -256,21 +272,33 @@
           </section>
           <section>
             <h2>HTML5 Forms</h2>
-            Pictures from Dries' deck of HTML5 on phones.
-            Picture of uploading file to file field by DND.
+              <video preload="auto" width="1024" controls>
+              <source src="assets/html5-fields.m4v" />
+            </video>
+            <aside class="notes">
+              <ul>
+                <li>Did anyone notice that we just created a node from a phone???</li>
+              </ul>
+            </aside>
           </section>
           <section>
             <p class="bigtext">Lines of Javascript by default: <em class="fragment" style="font-size: 1.5em">0</em></p>
           </section>
           <section>
             <h2>Oh wow, such libraries!</h2>
-            Make this inline.
-            <ul>
-              <li class="fragment">jQuery 2.0 logo</li>
-              <li class="fragment">jQuery UI logo</li>
-              <li class="fragment">Backbone JS logo</li>
-              <li class="fragment">Underscore logo</li>
+            <ul class="inline" style="background: White;">
+              <li class="fragment"><a href="http://jquery.com/"><img src="assets/jquery-logo.svg" alt="jQuery" data-credit="http://en.wikipedia.org/wiki/File:JQuery_logo.svg" /></a></li>
+              <li class="fragment"><a href="http://jqueryui.com/"><img src="assets/jquery-ui-logo.svg" alt="jQuery UI" data-credit="http://en.wikipedia.org/wiki/File:JQuery_UI_Logo.svg" /></a></li>
+              <li class="fragment"><a href="http://backbonejs.org/"><img src="assets/backbone-logo.png" alt="Backbone JS" /></a></li>
+              <li class="fragment"><a href="http://underscorejs.org/"><img src="assets/underscore-logo.png" alt="Underscore JS" /></a></li>
             </ul>
+            <aside class="notes">
+              <ul>
+                <li>We had jQuery and jQuery UI. Now they're at the new versions.</li>
+                <li>jQuery 2.0: Faster, less legacy cruft.</li>
+                <li>New tools for new fancy.</li>
+              </ul>
+            </aside>
           </section>
           <section>
             Twig logo
@@ -393,20 +421,21 @@ In-place editing
 
 -->
 
-
         <section>
-          <h2>Stalk me!</h2>
-          <p><a href="http://www.palantir.net/">http://www.palantir.net/</a></p>
-          <p><a href="http://www.garfieldtech.com/">http://www.garfieldtech.com/</a></p>
-          <p><a href="http://twitter.com/Crell">@Crell</a></p>
-
-          <h3 style="margin-top: 1em;">Tell me how I did</h3>
-          <p><a href="https://joind.in/9367">https://joind.in/9367</a></p>
-
-          <h3 style="margin-top: 1em;">Thanks!</h3>
+          <h2>Larry Garfield</h2>
+          <p>Senior Architect, <a href="http://www.palantir.net/">Palantir.net</a></p>
+          <p>Drupal core developer</p>
+          <p>PHP-FIG representative</p>
+          <p>Loveable pedant</p>
+          <p style="margin-top: 1em;">Yell at me on Twitter: <a href="http://twitter.com/Crell">@Crell</a></p>
+          <p>Stalk me professionally at <a href="http://twitter.com/Palantir">@Palantir</a></p>
         </section>
       </div>
     </div>
+
+    <footer class="palantir-logo">
+      <a href="http://www.palantir.net/contact"><img src="palantir/palantirnet-logo-4c-reversed.svg" alt="Palantir.net logo" /></a>
+    </footer>
 
     <script src="lib/js/head.min.js"></script>
     <script src="js/reveal.min.js"></script>
