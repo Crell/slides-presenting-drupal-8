@@ -44,6 +44,43 @@
 
     </style>
 
+    <script>
+(function() {
+  // The countup utility. Any element with a number value and an attribute
+  // of "data-countup" will get set to zero and then counted up to its original
+  // value when it is shown.  The value of the data-counter attribute will be
+  // the
+
+  var counterIndex;
+
+  document.addEventListener('DOMContentLoaded', function() {
+    Array.prototype.forEach.call(document.querySelectorAll('[data-countup]'), function(el, i) {
+      // If there's no ID, set one.
+      el.id = el.id || 'counter-' + counterIndex++;
+      runCounter(el.id, el.getAttribute('data-countup'));
+    });
+  });
+
+  var runCounter = function(id, delay) {
+    Reveal.addEventListener( 'fragmentshown', function( event ) {
+      if (event.fragment.id === id) {
+        var fragment = event.fragment;
+        var max = parseInt(fragment.textContent);
+        event.fragment.textContent = 0;
+        var counter = function() {
+          if (fragment.textContent < max) {
+            fragment.textContent = parseInt(fragment.textContent) + 1;
+            setTimeout(counter, delay);
+          }
+        };
+        setTimeout(counter, delay);
+      }
+    });
+  };
+
+})();
+    </script>
+
   </head>
   <body>
     <div class="reveal">
@@ -93,7 +130,8 @@
           </section>
 
           <section>
-            # of contributors to D7, as chart.
+            <p>Contributors to Drupal 7:</p>
+            <p class="fragment bigtext" data-countup="1">954</p>
           </section>
 
           <section>
