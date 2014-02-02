@@ -250,6 +250,10 @@
               <li class="fragment">WYSIWYG in core</li>
               <li class="fragment">Entity Reference in core</li>
               <li class="fragment">Date field in core</li>
+              <li class="fragment">Link field in core</li>
+              <li class="fragment">Email field in core</li>
+              <li class="fragment">Telephone field in core</li>
+
             </ul>
             <aside class="notes">
               <ul>
@@ -271,10 +275,10 @@
             <h1>For the end user</h1>
           </section>
           <section>
-            <h2>Did we mention WYSIWYG in core??</h2>
+            <p class="bigtext">Did we mention WYSIWYG in core??</p>
           </section>
           <section>
-            <video preload="auto" width="1024" controls>
+            <video preload="auto" class="stretch" controls data-autoplay>
               <source src="assets/edit-form-changes.m4v" data-credit="Dries Buytaert, Acquia" />
             </video>
           </section>
@@ -284,7 +288,7 @@
             <h1 class="fragment">Ever</h1>
           </section>
           <section>
-            <video preload="auto" width="1024" controls>
+            <video preload="auto" class="stretch" controls data-autoplay>
               <source src="assets/drupal8-accessibility.m4v" data-credit="Dries Buytaert, Acquia" />
             </video>
             <aside class="notes">
@@ -316,7 +320,7 @@
             <p class="fragment">(aka "Help module wishes it were this cool")</p>
           </section>
           <section>
-            <video preload="auto" width="1024" controls>
+            <video preload="auto" class="stretch" controls data-autoplay>
               <source src="assets/d8-tour.webm" data-credit="Larry Garfield" />
             </video>
           </section>
@@ -335,12 +339,12 @@
           </section>
           <section>
             <h2>In with the new</h2>
-            <ul class="inline" style="background: white;">
-              <li class="fragment"><img src="assets/html5-logo-wordmark.svg" alt="HTML5" style="width: 250px" data-credit="http://commons.wikimedia.org/wiki/File:HTML5_logo_and_wordmark.svg" /></li>
-              <li class="fragment"><img src="assets/css3-logo-wordmark.svg" alt="CSS3" style="width: 250px" data-credit="http://ohdoylerules.com/web/css3-badge-logo-in-svg" /></li>
-              <li class="fragment">RWD graphic</li>
+            <ul class="inline fragment" style="background: white;">
+              <li><img src="assets/html5-logo-wordmark.svg" alt="HTML5" style="width: 200px;" data-credit="http://commons.wikimedia.org/wiki/File:HTML5_logo_and_wordmark.svg" /></li>
+              <li><img src="assets/css3-logo-wordmark.svg" alt="CSS3" style="width: 200px;" data-credit="http://ohdoylerules.com/web/css3-badge-logo-in-svg" /></li>
             </ul>
-            <p class="fragment topspace">(There's an <a href="http://drupal.org/project/ie8">IE8 module</a> for the front-end if you really need)</p>
+            <p class="fragment"><img src="assets/umichmed-lead.jpg" style="width: 400px;" alt="Responsive Design" data-credit="http://www.palantir.net/blog/university-michigan-medical-school-gets-responsive-treatment" /></p>
+            <p class="fragment topspace">(There's an <a href="http://drupal.org/project/ie8">IE8 module</a> if you really need)</p>
             <aside class="notes">
               <ul>
                 <li>Everything is responsive out of the box.</li>
@@ -350,11 +354,18 @@
             </aside>
           </section>
           <section>
-            Image of responsive toolbar.  Video?
+            <video preload="auto" class="stretch" controls data-autoplay>
+              <source src="assets/d8-toolbar.webm" />
+            </video>
+            <aside class="notes">
+              <ul>
+                <li></li>
+              </ul>
+            </aside>
           </section>
           <section>
             <h2>HTML5 Forms</h2>
-              <video preload="auto" width="1024" controls>
+            <video preload="auto" class="stretch" controls data-autoplay>
               <source src="assets/html5-fields.m4v" />
             </video>
             <aside class="notes">
@@ -369,10 +380,10 @@
           <section>
             <h2>Oh wow, such libraries!</h2>
             <ul class="inline" style="background: White;">
-              <li class="fragment"><a href="http://jquery.com/"><img src="assets/jquery-logo.svg" alt="jQuery" data-credit="http://en.wikipedia.org/wiki/File:JQuery_logo.svg" /></a></li>
-              <li class="fragment"><a href="http://jqueryui.com/"><img src="assets/jquery-ui-logo.svg" alt="jQuery UI" data-credit="http://en.wikipedia.org/wiki/File:JQuery_UI_Logo.svg" /></a></li>
-              <li class="fragment"><a href="http://backbonejs.org/"><img src="assets/backbone-logo.png" alt="Backbone JS" /></a></li>
-              <li class="fragment"><a href="http://underscorejs.org/"><img src="assets/underscore-logo.png" alt="Underscore JS" /></a></li>
+              <li class="fragment"><a href="http://jquery.com/"><img src="assets/jquery-logo.svg" style="width: 40%;" alt="jQuery" data-credit="http://en.wikipedia.org/wiki/File:JQuery_logo.svg" /></a></li>
+              <li class="fragment"><a href="http://jqueryui.com/"><img src="assets/jquery-ui-logo.svg" style="width: 40%;" alt="jQuery UI" data-credit="http://en.wikipedia.org/wiki/File:JQuery_UI_Logo.svg" /></a></li>
+              <li class="fragment"><a href="http://backbonejs.org/"><img src="assets/backbone-logo.png" style="width: 40%;" alt="Backbone JS" /></a></li>
+              <li class="fragment"><br /><a href="http://underscorejs.org/"><img src="assets/underscore-logo.png" style="width: 40%;" alt="Underscore JS" /></a></li>
             </ul>
             <aside class="notes">
               <ul>
@@ -383,19 +394,86 @@
             </aside>
           </section>
           <section>
-            Twig logo
+            <h2>Twig</h2>
+            <img src="assets/twig-logo.png" alt="Twig the Templating engine" />
           </section>
           <section>
-            Old node template. Point out issues.
+            <h2>node.tpl.php</h2>
+            <pre><code class="stretch php" data-trim>
+&lt;div id="node-&lt;?php print $node->nid; ?>" class="&lt;?php print $classes; ?> clearfix"&lt;?php print $attributes; ?>>
+
+  &lt;?php print $user_picture; ?>
+
+  &lt;?php print render($title_prefix); ?>
+  &lt;?php if (!$page): ?>
+    &lt;h2&lt;?php print $title_attributes; ?>>&lt;a href="&lt;?php print $node_url; ?>">&lt;?php print $title; ?>&lt;/a>&lt;/h2>
+  &lt;?php endif; ?>
+  &lt;?php print render($title_suffix); ?>
+
+  &lt;?php if ($display_submitted): ?>
+    &lt;div class="submitted">
+      &lt;?php print $submitted; ?>
+    &lt;/div>
+  &lt;?php endif; ?>
+
+  &lt;div class="content"&lt;?php print $content_attributes; ?>>
+    &lt;?php
+      // We hide the comments and links now so that we can render them later.
+      hide($content['comments']);
+      hide($content['links']);
+      print render($content);
+    ?>
+  &lt;/div>
+
+  &lt;?php print render($content['links']); ?>
+
+  &lt;?php print render($content['comments']); ?>
+
+&lt;/div>
+</code></pre>
+            <aside class="notes">
+              <ul>
+                <li>Very verbose</li>
+                <li>PHP syntax is a turnoff</li>
+                <li>Easy to make security mistakes (SQL in templates)</li>
+              </ul>
+            </aside>
           </section>
           <section>
-            New twig template.
+            <h2>node.html.twig</h2>
+            <pre><code class="stretch twig" data-trim>
+&lt;article id="node-{{ node.id }}" class="{{ attributes.class }} clearfix"{{ attributes }}>
+
+  {{ title_prefix }}
+  {% if not page %}
+    &lt;h2{{ title_attributes }}>
+      &lt;a href="{{ node_url }}" rel="bookmark">{{ label }}</a>
+    &lt;/h2>
+  {% endif %}
+  {{ title_suffix }}
+
+  {% if display_submitted %}
+    &lt;footer>
+      {{ user_picture }}
+      &lt;p class="submitted">{{ submitted }}</p>
+    &lt;/footer>
+  {% endif %}
+
+  &lt;div{{ content_attributes }}>
+    {# We hide links now so that we can render them later. #}
+    {% hide(content.links) %}
+    {{ content }}
+  &lt;/div>
+
+  {{ content.links }}
+
+&lt;/article>
+</code></pre>
             <aside class="notes">
               <ul>
                 <li>D6: We think themers want this.</li>
                 <li>D7: Maybe they want this instead? (eeek!)</li>
                 <li>D8: OK, OK... what do you want? (TWIG!)</li>
-                <li>Twig it is.</li>
                 <li>Largest team of any task in Drupal 8; lots of themers</li>
               </ul>
             </aside>
@@ -404,6 +482,12 @@
             <p>And one more thing...</p>
             <p class="fragment bigtext" style="margin-top: 2em;">Now with 25% fewer divs<sup>*</sup></p>
             <p class="fragment" style="margin-top: 5em; text-align: left;"><small>* Compared to the previous leading Drupal.<br />Actual divs may vary by custom theme.<br />Offer void on IE 6.</small></p>
+            <aside class="notes">
+              <ul>
+                <li>Still a work in progress, esp. Views</li>
+                <li>If you want to help, join Morten's div-elimination army</li>
+              </ul>
+            </aside>
           </section>
         </section>
         <section>
@@ -447,6 +531,8 @@ List of southerners with commits to Drupal 8.  Pictures?
 Things you can still do to help.
 
 -->
+
+
 
 <!--
 
