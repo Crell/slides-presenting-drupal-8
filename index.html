@@ -42,6 +42,10 @@
       display: inline;
     }
 
+    .topspace {
+      margin-top: 1em;
+    }
+
     </style>
 
     <script>
@@ -118,7 +122,12 @@
             <img src="assets/drupalsites.png" alt="2% of the web runs Drupal" />
           </section>
           <section>
-            <img src="assets/drupalcon-denver.jpg" alt="Drupal's community is enormous" />
+            <img src="assets/drupalcon-portland.jpg" alt="Drupal's community is enormous" />
+            <aside class="notes">
+              <ul>
+                <li>DrupalCon Portland attandance: Over 3,300</li>
+              </ul>
+            </aside>
           </section>
 
           <section>
@@ -128,24 +137,21 @@
             <h3>Over 20,000 new Drupal 7 sites every month</h3>
             <img src="assets/drupal7-usage-stats.png" alt="Drupal 7 usage stats" />
           </section>
-
           <section>
-            <p>Contributors to Drupal 7:</p>
+            <p>Contributors to Drupal 7</p>
+            <img src="assets/d7-contributor-cloud-huge.png" style="height: 500px;" alt="Name cloud of D7 contributors" data-credit="https://drupal.org/drupal-7-released" />
             <p class="fragment bigtext" data-countup="1">954</p>
           </section>
-
           <section>
             <h2>Time to kick some ass<br />in Drupal 8</h2>
             <img src="assets/drupal8-kick-ass.jpg" alt="Drupal 8 will kick ass" style="height: 400px" />
           </section>
           <section>
             <p>Just one teeny little problem...</p>
+            <img class="fragment" src="assets/dries-college.jpg" alt="Dries in College" />
           </section>
           <section>
-            <img src="assets/dries-college.jpg" alt="Dries in College" />
-          </section>
-          <section>
-            <p>Drupal is an <em>12 year old</em>, <em>PHP 4-based</em> extensible
+            <p>Drupal is an <em>13 year old</em>, <em>PHP 4-based</em> extensible
               <em>Slashdot clone</em> originally written by a Belgian <em>college kid</em>.</p>
           </section>
           <section>
@@ -235,7 +241,7 @@
           </section>
           <section>
             <video preload="auto" width="1024" controls>
-              <source src="assets/edit-form-changes.m4v" />
+              <source src="assets/edit-form-changes.m4v" data-credit="Dries Buytaert, Acquia" />
             </video>
           </section>
           <section>
@@ -245,7 +251,7 @@
           </section>
           <section>
             <video preload="auto" width="1024" controls>
-              <source src="assets/drupal8-accessibility.m4v" />
+              <source src="assets/drupal8-accessibility.m4v" data-credit="Dries Buytaert, Acquia" />
             </video>
             <aside class="notes">
               <ul>
@@ -256,12 +262,14 @@
           </section>
           <section>
             <h2>Correction...</h2>
-            <q>Those responsible for the previous videos have been sacked.</q>
+            <p><q class="fragment">Those responsible for the previous<br />videos have been sacked.</q></p>
             <p class="fragment">Bye bye Overlay...</p>
-            Picture of "back to site" button on modules page
+            <img src="assets/d8-back-to-site.png" class="fragment" alt="The Drupal 8 Back to Site button" />
             <aside class="notes">
               <ul>
                 <li>Show of hands, who always disabled overlay?</li>
+                <li>We replaced 1000 lines of fugly JS hacks... with a button.</li>
+                <li>JS sessionStorage: Modern browsers</li>
               </ul>
             </aside>
           </section>
@@ -274,7 +282,9 @@
             <p class="fragment">(aka "Help module wishes it were this cool")</p>
           </section>
           <section>
-            Tour module video. Record this.
+            <video preload="auto" width="1024" controls>
+              <source src="assets/d8-tour.webm" data-credit="Larry Garfield" />
+            </video>
           </section>
         </section>
         <section>
@@ -296,7 +306,7 @@
               <li class="fragment"><img src="assets/css3-logo-wordmark.svg" alt="CSS3" style="width: 250px" data-credit="http://ohdoylerules.com/web/css3-badge-logo-in-svg" /></li>
               <li class="fragment">RWD graphic</li>
             </ul>
-            <p class="fragment">(There's an <a href="http://drupal.org/project/ie8">IE8 module</a> for the front-end if you really need)</p>
+            <p class="fragment topspace">(There's an <a href="http://drupal.org/project/ie8">IE8 module</a> for the front-end if you really need)</p>
             <aside class="notes">
               <ul>
                 <li>Everything is responsive out of the box.</li>
@@ -320,7 +330,7 @@
             </aside>
           </section>
           <section>
-            <p class="bigtext">Lines of Javascript by default: <em class="fragment" style="font-size: 1.5em">0</em></p>
+            <p class="bigtext">Lines of Javascript by default: <em class="fragment bigtext">0</em></p>
           </section>
           <section>
             <h2>Oh wow, such libraries!</h2>
