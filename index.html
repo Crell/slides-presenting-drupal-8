@@ -92,10 +92,11 @@
       if (event.fragment.id === id) {
         var fragment = event.fragment;
         var max = parseInt(fragment.textContent);
+        var step = parseInt(fragment.getAttribute('data-countup-step')) || 1;
         event.fragment.textContent = 0;
         var counter = function() {
           if (fragment.textContent < max) {
-            fragment.textContent = parseInt(fragment.textContent) + 1;
+            fragment.textContent = Math.min(parseInt(fragment.textContent) + step, max);
             setTimeout(counter, delay);
           }
         };
@@ -609,6 +610,9 @@
               </ul>
             </aside>
           </section>
+          <section>
+            
+          </section>
         </section>
         <section>
           <section>
@@ -617,6 +621,11 @@
           </section>
           <section>
             <img src="assets/issue-queue-status.png" alt="Status of the issue queue" />
+          </section>
+          <section>
+            <p>Contributors to Drupal 8</p>
+            <img src="assets/d7-contributor-cloud-huge.png" style="height: 500px;" alt="Name cloud of D7 contributors" data-credit="https://drupal.org/drupal-7-released" />
+            <p class="bigtext"><span class="fragment" data-countup="1" data-countup-step="10">1903</span><span class="fragment"> and counting</span></p>
           </section>
           <section>
             <h3>Local heroes</h3>
