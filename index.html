@@ -32,10 +32,10 @@
     <style type="text/css">
 
     ul.inline {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    text-align: center;
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      text-align: center;
     }
 
     ul.inline li {
@@ -44,6 +44,28 @@
 
     .topspace {
       margin-top: 1em;
+    }
+
+
+    ul.contributor-list img {
+      max-width: 180px;
+      max-height: 180px;
+      border: 0px;
+      background: transparent;
+    }
+    ul.contributor-list li {
+      list-style: none;
+      display: block;
+      width: 180px;
+      float: left;
+      margin: 10px;
+    }
+    ul.contributor-list li:nth-child(5n) {
+     clear: left;
+    }
+
+    ul.contributor li figcaption {
+      text-wrap: none;
     }
 
     </style>
@@ -259,19 +281,40 @@
           <section>
             <h2>Views in core</h2>
             <img src="assets/drupal8-views.png" alt="Views admin in Drupal 8" />
-            Talk more about this...
             <aside class="notes">
               <ul>
                 <li>We can remove a ton of one-off admin code and use Views.</li>
-                <li>admin/content isn't an override, it's the actual view</li>
+                <li>"Recent comments" block, why custom code/config? Not anymore.</li>
               </ul>
             </aside>
           </section>
           <section>
-            Img of content/admin, as created by Views
+            <img src="assets/drupal8-admin-content.png" alt="Content admin is now a view" />
+            <aside class="notes">
+              <ul>
+                <li>admin/content isn't an override, it's the actual view</li>
+                <li>Note VBO-like functionality</li>
+              </ul>
+            </aside>
           </section>
           <section>
-            <p>If you're a content strategist, Drupal 8 is the system for you.</p>
+            <h2>Why Views matters</h2>
+            <img class="fragment" src="assets/drupal7-usage-stats.png" alt="Drupal 7 usage stats" />
+            <aside class="notes">
+              <ul>
+                <li>Drupal 7 released January 2011</li>
+                <li>Views RC released June 2011</li>
+              </ul>
+            </aside>
+          </section>
+          <section>
+            <h2>Drupal 8</h2>
+            <ul>
+              <li class="fragment">Content modeling</li>
+              <li class="fragment">Content assembly</li>
+              <li class="fragment">Content curation</li>
+            </ul>
+            <p class="fragment bigtext" style="margin-top: 1em;">If you're a content strategist,<br />Drupal 8 is the system for you.</p>
           </section>
           <section>
             put CMI here
@@ -565,6 +608,28 @@
                 <li>If you can't PHPUnit it, you're not done</li>
               </ul>
             </aside>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>Want Drupal 8 yet?</h2>
+            <h2 class="fragment">Sorry, have to wait...</h2>
+          </section>
+          <section>
+            <img src="assets/issue-queue-status.png" alt="Status of the issue queue" />
+          </section>
+          <section>
+            <h3>Local heroes</h3>
+            <ul class="contributor-list">
+              <li><figure><img src="assets/drupalers-downunder/larowlan.jpg" alt="Lee Rowland" /><figcaption>Lee Rowland</figcaption></figure></li>
+              <li><figure><img src="assets/drupalers-downunder/beejeebus.jpg" alt="Justin Randall" /><figcaption>Justin Randall</figcaption></figure></li>
+              <li><figure><img src="assets/drupalers-downunder/kimb0.jpg" alt="Kim Pepper" /><figcaption>Kim Pepper</figcaption></figure></li>
+              <li><figure><img src="assets/drupalers-downunder/thedavidmeister.jpg" alt="David Meister" /><figcaption>David Meister</figcaption></figure></li>
+              <li><figure><img src="assets/drupalers-downunder/nick_schuch.png" alt="Nick Schuch" /><figcaption>Nick Schuch</figcaption></figure></li>
+              <li><figure><img src="assets/drupalers-downunder/lyricnz.jpg" alt="Simon Roberts" /><figcaption>Simon Roberts</figcaption></figure></li>
+              <li><figure><img src="assets/drupalers-downunder/benjy.jpg" alt="Ben Dougherty" /><figcaption>Ben Dougherty</figcaption></figure></li>
+              <li><figure><img src="assets/drupalers-downunder/typhonius.png" alt="Adam Malone" /><figcaption>Adam Malone</figcaption></figure></li>
+            </ul>
           </section>
         </section>
 
