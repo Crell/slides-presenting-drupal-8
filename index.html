@@ -156,18 +156,17 @@
               </ul>
             </aside>
           </section>
-
           <section>
             <img src="assets/oss-community-size.png" alt="Drupal's community is enormous" />
           </section>
           <section>
-            <h3>Over 20,000 new Drupal 7 sites every month</h3>
+            <h3>20,000+ new Drupal 7 sites every month</h3>
             <img src="assets/drupal7-usage-stats.png" alt="Drupal 7 usage stats" />
           </section>
           <section>
             <p>Contributors to Drupal 7</p>
             <img src="assets/d7-contributor-cloud-huge.png" style="height: 500px;" alt="Name cloud of D7 contributors" data-credit="https://drupal.org/drupal-7-released" />
-            <p class="fragment bigtext" data-countup="1">954</p>
+            <p class="fragment bigtext" data-countup="1" data-countup-step="5">954</p>
           </section>
           <section>
             <h2>Time to kick some ass<br />in Drupal 8</h2>
@@ -224,20 +223,6 @@
             <div style="width: 50%; float: left;">
               <h2>Drupal 7</h2>
               <div class="fragment">
-                <p>All home grown</p>
-              </div>
-            </div>
-            <div style="width: 50%; float: right;">
-              <h2 class="fragment">Drupal 8</h2>
-              <div class="fragment">
-                <p>Embrace other communities and tools</p>
-              </div>
-            </div>
-          </section>
-          <section>
-            <div style="width: 50%; float: left;">
-              <h2>Drupal 7</h2>
-              <div class="fragment">
                 <p>Everything is a Page</p>
               </div>
             </div>
@@ -245,6 +230,20 @@
               <h2 class="fragment">Drupal 8</h2>
               <div class="fragment">
                 <p>Everything is an response</p>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div style="width: 50%; float: left;">
+              <h2>Drupal 7</h2>
+              <div class="fragment">
+                <p>All home grown</p>
+              </div>
+            </div>
+            <div style="width: 50%; float: right;">
+              <h2 class="fragment">Drupal 8</h2>
+              <div class="fragment">
+                <p>Embrace other communities and tools</p>
               </div>
             </div>
           </section>
@@ -323,11 +322,22 @@
             <p class="fragment roll-in">Because database config is for lusers</p>
           </section>
           <section>
-            
+            <h2>Features: Fail</h2>
+            <p class="fragment">Poor deployment tool</p>
+            <p class="fragment">...Because it's not a deployment tool</p>
+            <p class="topspace fragment">Drupal 7 has no common configuration system!</p>
+          </section>
+          <section>
+            <h2>Configuration system</h2>
+            <ul>
+              <li class="fragment">Config on-disk</li>
+              <li class="fragment">Config staging/import built in</li>
+              <li class="fragment">Features/ctools exportables no longer exist</li>
+            </ul>
           </section>
           <section>
             <video preload="auto" class="stretch" controls data-autoplay>
-              <source src="assets/config-deploy.mp4" data-credit="Dries Buytaert, Acquia" />
+              <source src="assets/config-deploy.webm" data-credit="Dries Buytaert, Acquia" />
             </video>
           </section>
           <section>
@@ -350,10 +360,11 @@
           </section>
           <section>
             <video preload="auto" class="stretch" controls data-autoplay>
-              <source src="assets/edit-form-changes.m4v" data-credit="Dries Buytaert, Acquia" />
+              <source src="assets/edit-form-changes.webm" data-credit="Dries Buytaert, Acquia" />
             </video>
           </section>
           <section>
+            TODO
             Quick Edit: Video snippet from Dries
           </section>
           <section>
@@ -402,9 +413,6 @@
             </aside>
           </section>
           <section>
-            New styleguide: needs screenshot
-          </section>
-          <section>
             <q>But how do I use all of this new fangledness?</q>
             <h3 class="fragment" style="margin-top: 1em;">Tour module to the rescue</h3>
             <p class="fragment">(aka "Help module wishes it were this cool")</p>
@@ -426,6 +434,7 @@
               <li class="fragment"><img src="assets/ie-crossed.jpg" alt="Good bye, IE 7" style="width: 250px" data-credit="http://www.nursingjobs.us/blog/ie7-users-we-need-to-talk/" /></li>
               <li class="fragment"><img src="assets/ie8-crossed.jpg" alt="Good bye, IE 8" style="width: 250px" data-credit="http://www.promenadedln.com/microsoft/internet-explorer-8-offre-une-nouvelle-vision-des-sites-internet-477.html" /></li>
             </ul>
+            <p class="fragment topspace">(There's an <a href="http://drupal.org/project/ie8">IE8 module</a> if you really need)</p>
           </section>
           <section>
             <h2>In with the new</h2>
@@ -434,7 +443,6 @@
               <li><img src="assets/css3-logo-wordmark.svg" alt="CSS3" style="width: 200px;" data-credit="http://ohdoylerules.com/web/css3-badge-logo-in-svg" /></li>
             </ul>
             <p class="fragment"><img src="assets/umichmed-lead.jpg" style="width: 400px;" alt="Responsive Design" data-credit="http://www.palantir.net/blog/university-michigan-medical-school-gets-responsive-treatment" /></p>
-            <p class="fragment topspace">(There's an <a href="http://drupal.org/project/ie8">IE8 module</a> if you really need)</p>
             <aside class="notes">
               <ul>
                 <li>Everything is responsive out of the box.</li>
@@ -460,7 +468,7 @@
           <section>
             <h2>HTML5 Forms</h2>
             <video preload="auto" class="stretch" controls data-autoplay>
-              <source src="assets/html5-fields.m4v" />
+              <source src="assets/html5-fields.webm" />
             </video>
             <aside class="notes">
               <ul>
@@ -492,6 +500,14 @@
           <section>
             <h2>Twig</h2>
             <img src="assets/twig-logo.png" alt="Twig the Templating engine" />
+            <aside class="notes">
+              <ul>
+                <li>D6: We think themers want this.</li>
+                <li>D7: Maybe they want this instead? (eeek!)</li>
+                <li>D8: OK, OK... what do you want? (TWIG!)</li>
+                <li>Largest team of any task in Drupal 8; lots of themers</li>
+              </ul>
+            </aside>
           </section>
           <section>
             <h2>node.tpl.php</h2>
@@ -514,7 +530,6 @@
 
   &lt;div class="content"&lt;?php print $content_attributes; ?>>
     &lt;?php
-      // We hide the comments and links now so that we can render them later.
       hide($content['comments']);
       hide($content['links']);
       print render($content);
@@ -565,14 +580,6 @@
 
 &lt;/article>
 </code></pre>
-            <aside class="notes">
-              <ul>
-                <li>D6: We think themers want this.</li>
-                <li>D7: Maybe they want this instead? (eeek!)</li>
-                <li>D8: OK, OK... what do you want? (TWIG!)</li>
-                <li>Largest team of any task in Drupal 8; lots of themers</li>
-              </ul>
-            </aside>
           </section>
           <section>
             <p>And one more thing...</p>
@@ -598,6 +605,55 @@
                 <li>Not just new lang features; new philosophy</li>
                 <li>D7 didn't reinvent for new lang; D8 does</li>
                 <li>Biggest changes are here</li>
+              </ul>
+            </aside>
+          </section>
+          <section>
+            <h2>PHP 5.4 architecture</h2>
+            <ul>
+              <li class="fragment">Interface-driven development</li>
+              <li class="fragment">Loose coupling</li>
+              <li class="fragment">"Hack core without hacking core"</li>
+              <li class="fragment">Fewer Drupalisms</li>
+            </ul>
+          </section>
+          <section>
+            <img src="assets/drufony.png" alt="Drufony" />
+          </section>
+          <section>
+            <h3><del>Not Invented Here</del></h3>
+            <h3 class="fragment">Proudly Invented Elsewhere</h3>
+            <img class="fragment" src="assets/pie.jpg" style="width: 75%" alt="Proudly Invented Elsewhere is tasty." data-credit="http://www.flickr.com/photos/jaypeg/300749794/" />
+          </section>
+          <section>
+            <h2>Proudly Invented Elsewhere</h2>
+            <ul>
+              <li class="fragment">Symfony2 <small>(HttpFoundation, HttpKernel, DependencyInjection, EventDispatcher, Routing, Serializer, Validator, Yaml)</small></li>
+              <li class="fragment">Symfony CMF</li>
+              <li class="fragment">Zend Feed</li>
+              <li class="fragment">Doctrine Annotations</li>
+              <li class="fragment">Guzzle</li>
+              <li class="fragment">EasyRDF</li>
+              <li class="fragment">Assetic</li>
+              <li class="fragment">Twig</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Plugins</h2>
+            <ul>
+              <li class="fragment">ctools plugins, but good</li>
+              <li class="fragment"><q>Learn once, apply everywhere</q> &mdash;Lee Rowlands</li>
+              <li class="fragment">Interface-driven, self-documenting</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Entities/Nodes</h2>
+            <p>Unified API... <span>finally!</span></p>
+            <aside class="notes">
+              <ul>
+                <li>Fields make sense</li>
+                <li>Nodes/entities are for-reals objects w/ interfaces</li>
+                <li>Fiel, widgets, formatters are plugins, like everything else</li>
               </ul>
             </aside>
           </section>
@@ -629,6 +685,28 @@
         </section>
         <section>
           <section>
+            <h2>For existing users</h2>
+          </section>
+          <section>
+            <h2>Upgrading?</h2>
+            <ul>
+              <li class="fragment">Upgrading the DB from 6->7 was <em>hard</em></li>
+              <li class="fragment">Upgrading the DB to Drupal 8 would be harder</li>
+              <li class="fragment">So... don't</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Migrate!</h2>
+            <img class="fragment" src="assets/migration-kenya.jpg" alt="Migration" data-credit="http://www.flickr.com/photos/jameshammond/8733249464" />
+            <ul>
+              <li class="fragment">Migration system in core</li>
+              <li class="fragment">Migrate directly from Drupal 6 (Drupal 7 soon)</li>
+              <li class="fragment">Migrate from any system</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section>
             <h2>Want Drupal 8 yet?</h2>
             <h2 class="fragment">Sorry, have to wait...</h2>
           </section>
@@ -643,7 +721,7 @@
           <section>
             <h3>Local heroes</h3>
             <ul class="contributor-list">
-              <li><figure><img src="assets/drupalers-downunder/larowlan.jpg" alt="Lee Rowland" /><figcaption>Lee Rowland</figcaption></figure></li>
+              <li><figure><img src="assets/drupalers-downunder/larowlan.jpg" alt="Lee Rowlands" /><figcaption>Lee Rowlands</figcaption></figure></li>
               <li><figure><img src="assets/drupalers-downunder/beejeebus.jpg" alt="Justin Randall" /><figcaption>Justin Randall</figcaption></figure></li>
               <li><figure><img src="assets/drupalers-downunder/kimb0.jpg" alt="Kim Pepper" /><figcaption>Kim Pepper</figcaption></figure></li>
               <li><figure><img src="assets/drupalers-downunder/thedavidmeister.jpg" alt="David Meister" /><figcaption>David Meister</figcaption></figure></li>
