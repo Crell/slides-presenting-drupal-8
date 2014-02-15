@@ -42,7 +42,7 @@
       display: inline;
     }
 
-    .topspace {
+    *.topspace {
       margin-top: 1em;
     }
 
@@ -265,7 +265,7 @@
         <section>
           <section>
             <h1>For the site owner</h1>
-            <p class="bigtext fragment"><q>Drupal 8 is finally useful</q></p>
+            <p class="bigtext fragment roll-in"><q>Drupal 8 is finally useful</q></p>
           </section>
           <section>
             <p>Drupal 7 gave us Fields API...</p>
@@ -341,8 +341,13 @@
             </video>
           </section>
           <section>
-            <p>All right there, right from the new installer...</p>
+            <p>All right there, right from the new multilingual installer...</p>
             <img src="assets/d8-install.png" class="fragment" alt="The new Drupal 8 installer" />
+          </section>
+          <section>
+            <video preload="auto" class="stretch" controls data-autoplay>
+              <source src="assets/translation.webm" data-credit="Dries Buytaert, Acquia" />
+            </video>
           </section>
         </section>
         <section>
@@ -350,7 +355,7 @@
             <h1>For the end user</h1>
           </section>
           <section>
-            <p class="bigtext">Did we mention WYSIWYG in core??</p>
+            <p class="bigtext">zOMG WYSIWYG in core!!1!</p>
             <aside class="notes">
               <ul>
                 <li>CKEditor by default, tight coupling, better integration.</li>
@@ -362,10 +367,17 @@
             <video preload="auto" class="stretch" controls data-autoplay>
               <source src="assets/edit-form-changes.webm" data-credit="Dries Buytaert, Acquia" />
             </video>
+            <aside class="notes">
+              <ul>
+                <li>But we didn't stop there.</li>
+                <li>Rich-text editor isn't actually WYSIWYG</li>
+              </ul>
+            </aside>
           </section>
           <section>
-            TODO
-            Quick Edit: Video snippet from Dries
+            <video preload="auto" class="stretch" controls data-autoplay>
+              <source src="assets/edit-in-place.webm" data-credit="Dries Buytaert, Acquia" />
+            </video>
           </section>
           <section>
             <h1>Best</h1>
@@ -596,7 +608,7 @@
         <section>
           <section>
             <h1>For developers</h1>
-            <h2 class="fragment">OOP: there it is</h2>
+            <h2 class="fragment roll-in">OOP: there it is</h2>
           </section>
           <section>
             <img src="assets/php54.png" alt="Drupal now requires PHP 5.4" />
@@ -679,7 +691,7 @@
           <section>
             <h2>HAL API for entities</h2>
             <video preload="auto" class="stretch" controls data-autoplay>
-              <source src="assets/web-services.mp4" data-credit="Dries Buytaert, Acquia" />
+              <source src="assets/web-services.webm" data-credit="Dries Buytaert, Acquia" />
             </video>
           </section>
         </section>
@@ -716,7 +728,7 @@
           <section>
             <p>Contributors to Drupal 8</p>
             <img src="assets/drupal8-contributor-mosaic.jpg" style="height: 500px;" alt="Mosaic of D8 contributors" />
-            <p class="bigtext"><span class="fragment" data-countup="1" data-countup-step="10">1903</span><span class="fragment"> and counting</span></p>
+            <p class="bigtext"><span class="fragment" data-countup="1" data-countup-step="5">1903</span><span class="fragment"> and counting</span></p>
           </section>
           <section>
             <h3>Local heroes</h3>
@@ -730,6 +742,10 @@
               <li><figure><img src="assets/drupalers-downunder/benjy.jpg" alt="Ben Dougherty" /><figcaption>Ben Dougherty</figcaption></figure></li>
               <li><figure><img src="assets/drupalers-downunder/typhonius.png" alt="Adam Malone" /><figcaption>Adam Malone</figcaption></figure></li>
             </ul>
+          </section>
+          <section>
+            <p>Wait, where are the Kiwis?</p>
+            <img src="assets/kiwi-bird.jpg" alt="Kiwi bird" data-credit="http://www.flickr.com/photos/29856793@N05/2794832076" />
           </section>
           <section>
             <h2>WANTED: Dead or Alive</h2>
@@ -751,84 +767,11 @@
             </aside>
           </section>
         </section>
-
-
-<!--
-Don't forget CMI!!!
-
-5) For developers
-
-Modern browsers only.
-
-Javascript free anon.
-
-OOP: There it is.
-
-PHP 5.4.
-
-Symfony (Drufony logo)
-
-Collaboration (steal from other SF Live deck)
-
-REST
-
-X) Get involved
-
-Sound great?  Sorry, you can't have it yet.  It's not done.
-
-(Drupal 8 is in the future, remember?)
-
-Count of remaining critical/major tasks/bugs
-
-
-List of everyone with commits to Drupal 8.  Super small font/animation.
-
-List of southerners with commits to Drupal 8.  Pictures?
-
-Things you can still do to help.
-
--->
-
-
-
-<!--
-
-Dries' feature list:
-
-
-Views in core
-Admin listings converted to views
-Views bulk operations on core listings
-New install screen
-Responsive Bartik theme
-Responsive tables
-Re-designed, high resolution icons
-Content translation applies to all entities
-Guided tours
-Configuration translation
-Text transliteration
-Auto-installation and updates of translations
-Language assignment on almost anything
-Semantic HTML5 fields
-Customizable software translation
-Configuration management system
-Responsive admin theme
-Content structure tools: Email, Link, Entity Reference, Telephone, Date
-Improved modules page
-Custom block entities
-Re-designed block UI
-New theme system (twig)
-Human-readable image style names
-Image uploading, captioning and aligning  in WYSIWYG
-Universal modal dialog
-Re-built server-side ajax API
-Improved content creation page
-Schema.org integration
-WYSIWYG in core
-In-place editing
-
--->
-
+        <section>
+          <h2>Time to kick some ass<br />in Drupal 8</h2>
+          <img src="assets/drupal8-kick-ass.jpg" alt="Drupal 8 will kick ass" style="height: 400px" />
+          <p class="bigtext fragment">Together</p>
+        </section>
         <section>
           <h2>Larry Garfield</h2>
           <p>Senior Architect, <a href="http://www.palantir.net/">Palantir.net</a></p>
