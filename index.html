@@ -124,7 +124,7 @@
   <body>
     <div class="reveal">
       <div class="slides">
-        <section>
+        <section id="title-and-intro">
           <section>
             <h1>Drupal, the Future, and You</h1>
             <p>
@@ -153,17 +153,16 @@
               <li>Content strategy rabble-rouser</li>
             </ul>
           </section>
+          <section data-background="assets/drupal-delorean.jpg">
+            <div style="font-weight: bold; position: relative; top: 10em; text-shadow: 2px 2px 2px #000;">
+              <p>Presenting... the future!</p>
+            </div>
+          </section>
+          <section>
+            <img src="assets/drupal-8-logo.png" alt="Drupal 8" data-credit="https://drupal.org/node/2119739" />
+          </section>
         </section>
-        <section data-background="assets/drupal-delorean.jpg">
-          <div style="font-weight: bold; position: relative; top: 10em; text-shadow: 2px 2px 2px #000;">
-            <p>Presenting... the future!</p>
-          </div>
-        </section>
-        <section>
-          <img src="assets/drupal-8-logo.png" alt="Drupal 8" data-credit="https://drupal.org/node/2119739" />
-        </section>
-
-        <section>
+        <section id="current-state-of-affairs">
           <section>
             <p>The world as we know it</p>
             <img src="assets/drupal-7-logo.jpg" alt="Drupal 7" data-credit="https://association.drupal.org/files/drupal-7-logo.jpg" />
@@ -224,7 +223,7 @@
             <img src="assets/drupal8-kick-ass.jpg" alt="Drupal 8 will kick ass" style="height: 400px" />
           </section>
         </section>
-        <section>
+        <section id="the-new-hotness">
           <section>
             <p class="bigtext">Drupal 8 is a new generation<br />PHP framework/CMS</p>
             <aside class="notes">
@@ -287,14 +286,14 @@
             <div style="width: 50%; float: right;">
               <h2 class="fragment">Drupal 8</h2>
               <div class="fragment">
-                <p>Fully capable from day 1</p>
+                <p>Build real-world sites right away</p>
               </div>
             </div>
           </section>
         </section>
-        <section>
+        <section id="for-builders">
           <section>
-            <h1>For the site owner</h1>
+            <h1>For site builders</h1>
             <p class="bigtext fragment roll-in"><q>Drupal 8 is finally useful</q></p>
           </section>
           <section>
@@ -316,7 +315,7 @@
             <img src="assets/drupal8-views.png" alt="Views admin in Drupal 8" />
             <aside class="notes">
               <ul>
-                <li>We can remove a ton of one-off admin code and use Views.</li>
+                <li>Core blocks and content lists are customizable Views.</li>
                 <li>"Recent comments" block, why custom code/config? Not anymore.</li>
               </ul>
             </aside>
@@ -383,16 +382,16 @@
             </video>
           </section>
         </section>
-        <section>
+        <section id="for-editors">
           <section>
-            <h1>For the end user</h1>
+            <h1>For content editors</h1>
           </section>
           <section>
             <p class="bigtext">zOMG WYSIWYG in core!!1!</p>
             <aside class="notes">
               <ul>
-                <li>CKEditor by default, tight coupling, better integration.</li>
-                <li>Whole edit page experience is vastly improved.</li>
+                <li>CKEditor built in, automatic configuration, sensible defaults.</li>
+                <li>Content editing forms streamlined simplified.</li>
               </ul>
             </aside>
           </section>
@@ -468,7 +467,7 @@
             </video>
           </section>
         </section>
-        <section>
+        <section id="for-themers">
           <section>
             <h1>For themers</h1>
           </section>
@@ -638,7 +637,7 @@
             </aside>
           </section>
         </section>
-        <section>
+        <section id="for-developers">
           <section>
             <h1>For developers</h1>
             <h2 class="fragment roll-in">OOP: there it is</h2>
@@ -728,9 +727,9 @@
             </video>
           </section>
         </section>
-        <section>
+        <section id="preparing-for-the-future">
           <section>
-            <h2>For existing users</h2>
+            <h2>Preparing for the future</h2>
           </section>
           <section>
             <h2>Upgrading?</h2>
@@ -748,7 +747,7 @@
             <p class="fragment">Migrate from any system</p>
           </section>
         </section>
-        <section>
+        <section id="how-to-help">
           <section>
             <h2>Want Drupal 8 yet?</h2>
             <h2 class="fragment">Sorry, have to wait...</h2>
@@ -760,23 +759,6 @@
             <p>Contributors to Drupal 8</p>
             <img src="assets/drupal8-contributor-mosaic.jpg" style="height: 500px;" alt="Mosaic of D8 contributors" />
             <p class="bigtext"><span class="fragment" data-countup="1" data-countup-step="5">1903</span><span class="fragment"> and counting</span></p>
-          </section>
-          <section>
-            <h3>Local heroes</h3>
-            <ul class="contributor-list">
-              <li><figure><img src="assets/drupalers-downunder/larowlan.jpg" alt="Lee Rowlands" /><figcaption>Lee Rowlands</figcaption></figure></li>
-              <li><figure><img src="assets/drupalers-downunder/beejeebus.jpg" alt="Justin Randall" /><figcaption>Justin Randall</figcaption></figure></li>
-              <li><figure><img src="assets/drupalers-downunder/kimb0.jpg" alt="Kim Pepper" /><figcaption>Kim Pepper</figcaption></figure></li>
-              <li><figure><img src="assets/drupalers-downunder/thedavidmeister.jpg" alt="David Meister" /><figcaption>David Meister</figcaption></figure></li>
-              <li><figure><img src="assets/drupalers-downunder/nick_schuch.png" alt="Nick Schuch" /><figcaption>Nick Schuch</figcaption></figure></li>
-              <li><figure><img src="assets/drupalers-downunder/lyricnz.jpg" alt="Simon Roberts" /><figcaption>Simon Roberts</figcaption></figure></li>
-              <li><figure><img src="assets/drupalers-downunder/benjy.jpg" alt="Ben Dougherty" /><figcaption>Ben Dougherty</figcaption></figure></li>
-              <li><figure><img src="assets/drupalers-downunder/typhonius.png" alt="Adam Malone" /><figcaption>Adam Malone</figcaption></figure></li>
-            </ul>
-          </section>
-          <section>
-            <p>Wait, where are the Kiwis?</p>
-            <img src="assets/kiwi-bird.jpg" alt="Kiwi bird" data-credit="http://www.flickr.com/photos/29856793@N05/2794832076" />
           </section>
           <section>
             <h2>WANTED: Dead or Alive</h2>
@@ -798,12 +780,12 @@
             </aside>
           </section>
         </section>
-        <section>
+        <section id="kick-ass">
           <h2>Time to kick some ass<br />in Drupal 8</h2>
           <img src="assets/drupal8-kick-ass.jpg" alt="Drupal 8 will kick ass" style="height: 400px" />
           <p class="bigtext fragment">Together</p>
         </section>
-        <section>
+        <section id="final-slide">
           <div style="width: 50%; float: left; margin-bottom: 1em;">
             <h2>Larry Garfield</h2>
             <p>Sr. Architect, <a href="http://www.palantir.net/">Palantir.net</a></p>
