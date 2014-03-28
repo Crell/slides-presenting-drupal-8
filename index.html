@@ -162,7 +162,7 @@
             <img src="assets/drupal-8-logo.png" alt="Drupal 8" data-credit="https://drupal.org/node/2119739" />
           </section>
         </section>
-        <section id="current-state-of-affairs">
+        <section id="current-state-of-affairs" data-primary-speaker="eaton">
           <section>
             <p>The world as we know it</p>
             <img src="assets/drupal-7-logo.jpg" alt="Drupal 7" data-credit="https://association.drupal.org/files/drupal-7-logo.jpg" />
@@ -223,7 +223,7 @@
             <img src="assets/drupal8-kick-ass.jpg" alt="Drupal 8 will kick ass" style="height: 400px" />
           </section>
         </section>
-        <section id="the-new-hotness">
+        <section id="the-new-hotness" data-primary-speaker="larry">
           <section>
             <p class="bigtext">Drupal 8 is a new generation<br />PHP framework/CMS</p>
             <aside class="notes">
@@ -291,14 +291,14 @@
             </div>
           </section>
         </section>
-        <section id="for-builders">
+        <section id="for-builders" data-primary-speaker="eaton">
           <section>
             <h1>For site builders</h1>
-            <p class="bigtext fragment roll-in"><q>Drupal 8 is finally useful</q></p>
+            <p class="bigtext fragment roll-in"><q>Build <em>real</em> sites with core</q></p>
           </section>
           <section>
             <p>Drupal 7 gave us Fields API...</p>
-            <p class="fragment">... Drupal 8 gives us Fields to use</p>
+            <p class="fragment">... Drupal 8 expands the toolbox</p>
             <ul>
               <li class="fragment">Entity Reference</li>
               <li class="fragment">Date</li>
@@ -327,16 +327,6 @@
               <ul>
                 <li>admin/content isn't an override, it's the actual view</li>
                 <li>Note VBO-like functionality</li>
-              </ul>
-            </aside>
-          </section>
-          <section>
-            <h2>Why Views matters</h2>
-            <img class="fragment" src="assets/drupal7-usage-stats.png" alt="Drupal 7 usage stats" />
-            <aside class="notes">
-              <ul>
-                <li>Drupal 7 released January 2011</li>
-                <li>Views RC released June 2011</li>
               </ul>
             </aside>
           </section>
@@ -382,7 +372,7 @@
             </video>
           </section>
         </section>
-        <section id="for-editors">
+        <section id="for-editors" data-primary-speaker="eaton">
           <section>
             <h1>For content editors</h1>
           </section>
@@ -467,7 +457,7 @@
             </video>
           </section>
         </section>
-        <section id="for-themers">
+        <section id="for-themers" data-primary-speaker="larry">
           <section>
             <h1>For themers</h1>
           </section>
@@ -637,7 +627,7 @@
             </aside>
           </section>
         </section>
-        <section id="for-developers">
+        <section id="for-developers" data-primary-speaker="larry">
           <section>
             <h1>For developers</h1>
             <h2 class="fragment roll-in">OOP: there it is</h2>
@@ -727,27 +717,41 @@
             </video>
           </section>
         </section>
-        <section id="preparing-for-the-future">
+        <section id="preparing-for-the-future" data-primary-speaker="eaton">
           <section>
-            <h2>Preparing for the future</h2>
+            <h1>Planning to upgrade?</h1>
           </section>
           <section>
-            <h2>Upgrading?</h2>
+          	<h2>Understand Your Site</h2>
+          	<ul>
+          		<li class="fragment">Content types and relationships</li>
+          		<li class="fragment">Collections and assemblies</li>
+          		<li class="fragment">Design elements</li>
+          		<li class="fragment">Editorial roles, workflow</li>
+          		<li class="fragment">Figure out the missing pieces in D8</li>
+          	</ul>
+          </section>
+          <section>
+            <h2>Oh, and... Content.</h2>
             <ul>
-              <li class="fragment">Upgrading the DB from 6->7 was <em>hard</em></li>
-              <li class="fragment">Upgrading the DB to Drupal 8 would be harder</li>
-              <li class="fragment">So... don't</li>
+              <li class="fragment">In-place upgrades for content are <em>hard</em></li>
+              <li class="fragment">Contrib fields make it even trickier</li>
+              <li class="fragment">Most large sites rebuild and migrate</li>
             </ul>
           </section>
           <section>
             <h2>Migrate!</h2>
             <img class="fragment" src="assets/migration-kenya.jpg" alt="Migration" data-credit="http://www.flickr.com/photos/jameshammond/8733249464" />
-            <p class="fragment">Migration system in core</p>
+            <p class="fragment">Content migration system in core</p>
             <p class="fragment">Migrate directly from Drupal 6 (Drupal 7 soon)</p>
-            <p class="fragment">Migrate from any system</p>
+            <p class="fragment">Migrate from any CMS, DB, etc…</p>
+          </section>
+          <section>
+          	<h1>Attend Dave's Session:</h1>
+          	<h2>Future-Proof Your D7 Site</h2>
           </section>
         </section>
-        <section id="how-to-help">
+        <section id="how-to-help" data-primary-speaker="larry">
           <section>
             <h2>Want Drupal 8 yet?</h2>
             <h2 class="fragment">Sorry, have to wait...</h2>
@@ -788,15 +792,21 @@
         <section id="final-slide">
           <div style="width: 50%; float: left; margin-bottom: 1em;">
             <h2>Larry Garfield</h2>
-            <p>Sr. Architect, <a href="http://www.palantir.net/">Palantir.net</a></p>
-            <p>Making the Web a Better Place</p>
-            <p>Keep tabs on our work at <a href="http://twitter.com/Palantir">@Palantir</a></p>
-            <p>Want to hear about <a href="http://eepurl.com/ws6uj">what we're doing</a>?</p>
+            <div style="font-size: .8em;">
+							<p>Sr. Architect, <a href="http://www.palantir.net/">Palantir.net</a></p>
+							<p>Making the Web a Better Place</p>
+							<p>Keep tabs on our work at <a href="http://twitter.com/Palantir">@Palantir</a></p>
+							<p>Want to hear about <a href="http://eepurl.com/ws6uj">what we're doing</a>?</p>
+            </div>
           </div>
           <div style="width: 50%; float: right; margin-bottom: 1em;">
             <h2>Jeff Eaton</h2>
-            <p>Digital Strategist, <a href="http://www.lullabot.com/">Lullabot</a></p>
-            <p>Lullabot links go here.</p>
+            <div style="font-size: .8em;">
+							<p>Digital Strategist, <a href="http://www.lullabot.com/">Lullabot</a></p>
+							<p>Strategy, Design, Development</p>
+							<p>Read stuff at <a href="http://lullabot.com">Lullabot.com</a></p>
+							<p>Listen to Lullabot <a href="https://www.lullabot.com/blog/podcasts">podcasts</a></p>
+            </div>
           </div>
           <p>See us debate on Twitter: <a href="http://twitter.com/Crell">@Crell</a> &amp; <a href="http://twitter.com/eaton">@eaton</a></p>
         </section>
@@ -804,7 +814,7 @@
     </div>
 
     <footer class="palantir-logo">
-      <a href="http://www.palantir.net/"><img src="palantir/palantirnet-logo-4c-reversed.svg" alt="Palantir.net logo" height="37" /></a>
+      <a href="http://www.palantir.net/"><img src="palantir/palantirnet-logo-4c-reversed.svg" alt="Palantir.net logo" height="37"/></a>
       <a href="http://www.lullabot.com/"><img src="assets/lullalogo_horizontal_red.svg" alt="Lullabot logo" height="37" /></a>
     </footer>
 
