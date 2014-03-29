@@ -345,8 +345,8 @@
             <p class="fragment bigtext" style="margin-top: 1em;">If you're a content strategist,<br />Drupal 8 speaks your language.</p>
           </section>
           <section>
-            <h2>Configuration Management</h2>
-            <p class="fragment roll-in">Mixing content and config ==  Pain</p>
+            <h2>Configuration management</h2>
+            <p class="fragment roll-in">Mixing content and config == Pain</p>
           </section>
           <section>
             <h2>Features: Fail</h2>
@@ -355,11 +355,12 @@
             <p class="topspace fragment">Drupal 7 has no common configuration system!</p>
           </section>
           <section>
-            <h2>Configuration system</h2>
+            <h2>The new Config API</h2>
             <ul>
-              <li class="fragment">Config on-disk</li>
-              <li class="fragment">Config staging/import built in</li>
-              <li class="fragment">Features/ctools exportables no longer exist</li>
+              <li class="fragment">Settings, site structure on disk</li>
+              <li class="fragment">Config import/export built in</li>
+              <li class="fragment">Modules can include default config</li>
+              <li class="fragment">Database is now leaner, more <em>content</em>ed</li>
             </ul>
           </section>
           <section>
@@ -368,10 +369,11 @@
             </video>
           </section>
           <section>
-            <p>All right there, right from the new multilingual installer...</p>
+            <h2>Cleaner, themable installer</h2>
             <img src="assets/d8-install.png" class="fragment" alt="The new Drupal 8 installer" />
           </section>
           <section>
+            <h2>Beefier localization system</h2>
             <video preload="auto" class="stretch" controls data-autoplay>
               <source src="assets/translation.webm" data-credit="Dries Buytaert, Acquia" />
             </video>
@@ -382,34 +384,37 @@
             <h1>For content editors</h1>
           </section>
           <section>
-            <p class="bigtext">zOMG WYSIWYG in core!!1!</p>
-            <aside class="notes">
-              <ul>
-                <li>CKEditor built in, automatic configuration, sensible defaults.</li>
-                <li>Content editing forms streamlined simplified.</li>
-              </ul>
-            </aside>
+            <h2 class="bigtext">WYSI-<em>WIN</em></h2>
+						<ul>
+							<li>CKEditor built in</li>
+							<li>Automatic configuration, sensible defaults</li>
+							<li>Content editing forms streamlined</li>
+						</ul>
           </section>
           <section>
             <video preload="auto" class="stretch" controls data-autoplay>
               <source src="assets/edit-form-changes.webm" data-credit="Dries Buytaert, Acquia" />
             </video>
-            <aside class="notes">
-              <ul>
-                <li>But we didn't stop there.</li>
-                <li>Rich-text editor isn't actually WYSIWYG</li>
-              </ul>
-            </aside>
           </section>
           <section>
+          	<h2>In-Place Editing</h2>
             <video preload="auto" class="stretch" controls data-autoplay>
               <source src="assets/edit-in-place.webm" data-credit="Dries Buytaert, Acquia" />
             </video>
           </section>
           <section>
-            <h1>Best</h1>
-            <h1 class="fragment">Accessibility</h1>
-            <h1 class="fragment">Ever</h1>
+            <h2>No More Overlay</h2>
+            <img src="assets/d8-back-to-site.png" class="fragment" alt="The Drupal 8 Back to Site button" />
+            <aside class="notes">
+              <ul>
+                <li>Show of hands, who always disabled overlay?</li>
+                <li>We replaced 1000 lines of fugly JS hacks... with a button.</li>
+                <li>JS sessionStorage: Modern browsers</li>
+              </ul>
+            </aside>
+          </section>
+          <section>
+            <h1>Ultra</br>Accessibility</h1>
             <aside class="notes">
               <ul>
                 <li>2010, Everett Zufelt presents on accessibility</li>
@@ -421,6 +426,7 @@
           <section>
             <p class="bigtext">WAI-ARIA all the things!</p>
             <p class="bigtext fragment">Keyboard control</p>
+            <p class="bigtext fragment">Audio. No, for serious.</p>
             <aside class="notes">
               <ul>
                 <li>Have you ever felt like Drupal was trying to talk to you?</li>
@@ -439,27 +445,13 @@
             </aside>
           </section>
           <section>
-            <h2>Correction...</h2>
-            <p><q class="fragment">Those responsible for the previous<br />videos have been sacked.</q></p>
-            <p class="fragment">Bye bye Overlay...</p>
-            <img src="assets/d8-back-to-site.png" class="fragment" alt="The Drupal 8 Back to Site button" />
-            <aside class="notes">
-              <ul>
-                <li>Show of hands, who always disabled overlay?</li>
-                <li>We replaced 1000 lines of fugly JS hacks... with a button.</li>
-                <li>JS sessionStorage: Modern browsers</li>
-              </ul>
-            </aside>
-          </section>
-          <section>
-            <q>But how do I use all of this new fangledness?</q>
-            <h3 class="fragment" style="margin-top: 1em;">Tour module to the rescue</h3>
-            <p class="fragment">(aka "Help module wishes it were this cool")</p>
-          </section>
-          <section>
+            <h2>…And a new help system</h2>
             <video preload="auto" class="stretch" controls data-autoplay>
               <source src="assets/d8-tour.webm" data-credit="Larry Garfield" />
             </video>
+          </section>
+          <section>
+            <h2>Smoother, better,<br/> more delicious</h2>
           </section>
         </section>
         <section id="for-themers" data-primary-speaker="larry">
