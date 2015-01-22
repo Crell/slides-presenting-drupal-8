@@ -62,7 +62,7 @@
     ul.contributor-list img {
       max-width: 180px;
       max-height: 180px;
-      border: 0px;
+      border: 0;
       background: transparent;
     }
     ul.contributor-list li {
@@ -403,7 +403,7 @@
             </aside>
           </section>
           <section>
-            <h1>Ultra</br>Accessibility</h1>
+            <h1>Ultra<br />Accessibility</h1>
             <aside class="notes">
               <ul>
                 <li>2010, Everett Zufelt presents on accessibility</li>
@@ -578,7 +578,7 @@
   {{ title_prefix }}
   {% if not page %}
     &lt;h2{{ title_attributes }}>
-      &lt;a href="{{ node_url }}" rel="bookmark">{{ label }}</a>
+      &lt;a href="{{ node_url }}" rel="bookmark">{{ label }}&lt;/a>
     &lt;/h2>
   {% endif %}
   {{ title_suffix }}
@@ -586,7 +586,7 @@
   {% if display_submitted %}
     &lt;footer>
       {{ user_picture }}
-      &lt;p class="submitted">{{ submitted }}</p>
+      &lt;p class="submitted">{{ submitted }}&lt;/p>
     &lt;/footer>
   {% endif %}
 
