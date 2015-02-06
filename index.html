@@ -28,6 +28,7 @@
     <script src="lib/js/html5shiv.js"></script>
     <![endif]-->
 
+    <script src="palantir/classer.js"></script>
 
     <style type="text/css">
 
@@ -66,6 +67,15 @@
 
     ul.contributor li figcaption {
       text-wrap: none;
+    }
+
+    img {
+      max-width: 100%;
+      max-height: 80%;
+    }
+
+    .struck {
+      text-decoration: line-through;
     }
 
     </style>
@@ -551,36 +561,48 @@
               </ul>
             </aside>
           </section>
-          <section>
-            <h2>node.html.twig</h2>
+          <section data-state="large">
+            <!--<h2>node.html.twig</h2>-->
             <pre><code class="stretch twig" data-trim>
-&lt;article id="node-{{ node.id }}" class="{{ attributes.class }} clearfix"{{ attributes }}>
-
+{% set classes = [
+    'node--type-' ~ node.bundle|clean_class,
+    node.isPromoted() ? 'node--promoted',
+    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+  ] %}
+&lt;article{{ attributes.addClass(classes) }}>
   {{ title_prefix }}
   {% if not page %}
     &lt;h2{{ title_attributes }}>
-      &lt;a href="{{ node_url }}" rel="bookmark">{{ label }}&lt;/a>
+      &lt;a href="{{ url }}" rel="bookmark">{{ label }}&lt;/a>
     &lt;/h2>
   {% endif %}
   {{ title_suffix }}
 
   {% if display_submitted %}
-    &lt;footer>
-      {{ user_picture }}
-      &lt;p class="submitted">{{ submitted }}&lt;/p>
-    &lt;/footer>
+    &lt;div{{ author_attributes.addClass('node__submitted') }}>
+      {% trans %}Submitted by {{ author_name|passthrough }} on {{ date|passthrough }}{% endtrans %}
+      {{ metadata }}
+    &lt;/div>
   {% endif %}
 
-  &lt;div{{ content_attributes }}>
-    {# We hide links now so that we can render them later. #}
-    {% hide(content.links) %}
-    {{ content }}
+  &lt;div{{ content_attributes.addClass('node__content') }}>
+    {{ content|without('links') }}
   &lt;/div>
 
-  {{ content.links }}
+  {% if content.links %}
+    &lt;div class="node__links">
+      {{ content.links }}
+    &lt;/div>
+  {% endif %}
 
 &lt;/article>
-</code></pre>
+            </code></pre>
+            <aside class="notes">
+              <ul>
+                <li>Worry less about security</li>
+                <li>Don't need to know PHP</li>
+              </ul>
+            </aside>
           </section>
           <section>
             <p>And one more thing...</p>
@@ -619,11 +641,11 @@
             </ul>
           </section>
           <section>
-            <img src="assets/drufony.png" alt="Drufony" />
+            <img src="assets/drufony.png" alt="Drufony" width="50%" />
           </section>
           <section>
-            <h3><del>Not Invented Here</del></h3>
-            <h3 class="fragment">Proudly Invented Elsewhere</h3>
+            <h3 class="nih">Not Invented Here</h3>
+            <h3 class="fragment" data-classer="nih" data-classer-class="struck">Proudly Invented Elsewhere</h3>
             <img class="fragment" src="assets/pie.jpg" style="width: 75%" alt="Proudly Invented Elsewhere is tasty." data-credit="http://www.flickr.com/photos/jaypeg/300749794/" />
           </section>
           <section>
@@ -635,7 +657,6 @@
               <li class="fragment">Doctrine Annotations</li>
               <li class="fragment">Guzzle</li>
               <li class="fragment">EasyRDF</li>
-              <li class="fragment">Assetic</li>
               <li class="fragment">Twig</li>
             </ul>
           </section>
@@ -713,12 +734,8 @@
             <p class="fragment">Migrate directly from Drupal 6 (Drupal 7 soon)</p>
             <p class="fragment">Migrate from any CMS, DB, etc…</p>
           </section>
-          <section>
-            <h2>Attend Dave's Session:</h2>
-            <h3>Future-Proof Your D7 Site</h3>
-          </section>
         </section>
-        <section id="how-to-help" data-primary-speaker="larry">
+        <section id="how-to-help">
           <section>
             <h2>Want Drupal 8 yet?</h2>
             <h2 class="fragment">Sorry, have to wait...</h2>
@@ -743,18 +760,23 @@
               <li class="fragment">Sysadmins/devops for testbot</li>
               <li class="fragment">Sprint hosts/sponsors</li>
             </ul>
-            <aside class="notes">
-              <ul>
-                <li>Schedule sprints @ same time as DevDays/Midcamp: March 24-30</li>
-                <li>NYCCamp: April 10-13</li>
-              </ul>
-            </aside>
           </section>
         </section>
         <section id="kick-ass">
-          <h2>Time to kick some ass<br />in Drupal 8</h2>
+          <h2>Drupal 8 is going to kick-ass</h2>
           <img src="assets/drupal8-kick-ass.jpg" alt="Drupal 8 will kick ass" style="height: 400px" />
           <p class="bigtext fragment">Together</p>
+          <aside class="notes">
+            <ul>
+              <li>Better for us</li>
+              <li>Better for clients</li>
+              <li>Better for PHP</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section>
+          <img src="assets/drupal-8-logo.svg" alt="Drupal 8" data-credit="https://drupal.org/node/2119739" style="width: 650px ;" />
         </section>
 
         <section id="final">
