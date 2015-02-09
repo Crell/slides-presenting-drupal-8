@@ -47,6 +47,10 @@
       margin-top: 1em;
     }
 
+    ul.contributor-list {
+      display: flex;
+      text-align: center;
+    }
 
     ul.contributor-list img {
       max-width: 180px;
@@ -58,11 +62,8 @@
       list-style: none;
       display: block;
       width: 180px;
-      float: left;
+      height: 180px;
       margin: 10px;
-    }
-    ul.contributor-list li:nth-child(5n) {
-     clear: left;
     }
 
     ul.contributor li figcaption {
@@ -455,7 +456,7 @@
             </aside>
           </section>
         </section>
-        <section id="for-themers" data-primary-speaker="larry">
+        <section id="for-themers">
           <section>
             <h1>For themers</h1>
           </section>
@@ -485,7 +486,7 @@
           </section>
           <section>
             <video preload="auto" class="stretch" controls data-autoplay>
-              <!--<source src="assets/d8-toolbar.webm" />-->
+              <source src="assets/d8-toolbar.webm" />
             </video>
             <aside class="notes">
               <ul>
@@ -500,7 +501,7 @@
           <section>
             <h2>HTML5 Forms</h2>
             <video preload="auto" class="stretch" controls data-autoplay>
-              <!--<source src="assets/html5-fields.webm" />-->
+              <source src="assets/html5-fields.webm" />
             </video>
             <aside class="notes">
               <ul>
@@ -511,6 +512,7 @@
           <section>
             <p class="bigtext">Lines of Javascript by default: <em class="fragment bigtext">0</em></p>
           </section>
+          <!--
           <section>
             <h2>Oh wow, such libraries!</h2>
             <div style="background: White;">
@@ -528,7 +530,7 @@
                 <li>New tools for new fancy.</li>
               </ul>
             </aside>
-          </section>
+          </section> -->
           <section>
             <h2>Twig</h2>
             <img src="assets/twig-logo.png" alt="Twig the Templating engine" />
@@ -545,9 +547,7 @@
             <h2>node.tpl.php</h2>
             <pre><code class="stretch php" data-trim>
 &lt;div id="node-&lt;?php print $node->nid; ?>" class="&lt;?php print $classes; ?> clearfix"&lt;?php print $attributes; ?>>
-
   &lt;?php print $user_picture; ?>
-
   &lt;?php print render($title_prefix); ?>
   &lt;?php if (!$page): ?>
     &lt;h2&lt;?php print $title_attributes; ?>>&lt;a href="&lt;?php print $node_url; ?>">&lt;?php print $title; ?>&lt;/a>&lt;/h2>
@@ -569,7 +569,6 @@
   &lt;/div>
 
   &lt;?php print render($content['links']); ?>
-
   &lt;?php print render($content['comments']); ?>
 
 &lt;/div>
@@ -588,7 +587,6 @@
 {% set classes = [
     'node--type-' ~ node.bundle|clean_class,
     node.isPromoted() ? 'node--promoted',
-    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
   ] %}
 &lt;article{{ attributes.addClass(classes) }}>
   {{ title_prefix }}
@@ -609,19 +607,18 @@
   &lt;div{{ content_attributes.addClass('node__content') }}>
     {{ content|without('links') }}
   &lt;/div>
-
   {% if content.links %}
     &lt;div class="node__links">
       {{ content.links }}
     &lt;/div>
   {% endif %}
-
 &lt;/article>
             </code></pre>
             <aside class="notes">
               <ul>
                 <li>Worry less about security</li>
                 <li>Don't need to know PHP</li>
+                <li>Used by many projects</li>
               </ul>
             </aside>
           </section>
@@ -637,10 +634,10 @@
             </aside>
           </section>
         </section>
-        <section id="for-developers" data-primary-speaker="larry">
+        <section>
           <section>
-            <h1>For developers</h1>
-            <h2 class="fragment roll-in">OOP: there it is</h2>
+            <h2>Under the hood</h2>
+            <img src="assets/classic-car.jpg" style="width: 80%;" alt="Let's look under the hood" data-credit="https://www.flickr.com/photos/jclor/6962368687" />
           </section>
           <section>
             <img src="assets/php54.png" alt="Drupal now requires PHP 5.4" />
@@ -665,14 +662,14 @@
             <img src="assets/drufony.png" alt="Drufony" width="50%" />
           </section>
           <section>
-            <h3 class="nih">Not Invented Here</h3>
+            <h3 id="nih">Not Invented Here</h3>
             <h3 class="fragment" data-classer="nih" data-classer-class="struck">Proudly Invented Elsewhere</h3>
             <img class="fragment" src="assets/pie.jpg" style="width: 75%" alt="Proudly Invented Elsewhere is tasty." data-credit="http://www.flickr.com/photos/jaypeg/300749794/" />
           </section>
           <section>
             <h2>Proudly Invented Elsewhere</h2>
             <ul>
-              <li class="fragment">Symfony2 <small>(HttpFoundation, HttpKernel, DependencyInjection, EventDispatcher, Routing, Serializer, Validator, Yaml)</small></li>
+              <li class="fragment">Symfony2 Components <small>(HttpFoundation, HttpKernel, DependencyInjection, EventDispatcher, Routing, Serializer, Validator, Yaml)</small></li>
               <li class="fragment">Symfony CMF</li>
               <li class="fragment">Zend Feed</li>
               <li class="fragment">Doctrine Annotations</li>
@@ -717,45 +714,77 @@
           </section>
           <section>
             <p>RESTful pipeline</p>
-            <p class="fragment">... HTML is just REST</p>
+            <p class="fragment">&hellip;HTML is just REST</p>
           </section>
           <section>
-            <h2>HAL API for entities</h2>
-            <video preload="auto" class="stretch" controls data-autoplay>
-              <!--<source src="assets/web-services.webm" data-credit="Dries Buytaert, Acquia" />-->
-            </video>
+            <p class="bigtext">Not just mobile!</p>
+            <p class="fragment">Think server-to-server</p>
+            <p class="fragment">Think client-side customization</p>
+            <aside class="notes">
+              <ul>
+                <li>Mobile should be responsive!</li>
+                <li>Syndication</li>
+                <li>Content staging/deployment</li>
+                <li>Data archival</li>
+              </ul>
+            </aside>
           </section>
         </section>
-        <section id="preparing-for-the-future">
+        <section>
           <section>
-            <h1>Planning to upgrade?</h1>
+            <h2>We've gotten off the island</h2>
+            <img src="assets/drupal-island.jpg" alt="Drupal Island" data-credit="http://deeson-online.co.uk/blog/could-be-mythical-drupal-island" />
+            <aside class="notes">
+              <ul>
+                <li>Enzo Costa Rica companies story</li>
+                <li>Now can hire more people! (good for small shops)</li>
+                <li>Now can use other projects, too (good for devs)</li>
+                <li>Palantir: Drupal, Symfony, Silex, Sculpin, all Twig!</li>
+              </ul>
+            </aside>
           </section>
           <section>
-            <h2>Understand Your Site</h2>
+            <img src="assets/scared-cat-garfield.jpg" style="width: 70%;" alt="Is this scary??" data-credit="https://www.flickr.com/photos/hellie55/6580576689" />
+            <aside class="notes">
+              <ul>
+                <li>Hear lots of concern, so new, different</li>
+              </ul>
+            </aside>
+          </section>
+          <section>
+            <img src="assets/smiling-cat.jpg" style="width: 80%;" alt="No, it's quite nice." data-credit="https://www.flickr.com/photos/lambj/5345024552" />
+            <aside class="notes">
+              <ul>
+                <li>Inside Drupal and out</li>
+                <li>Ryan Weaver, Sunshine PHP, Drupal as framework</li>
+              </ul>
+            </aside>
+          </section>
+          <section>
+            <h2>Drupal Console</h2>
             <ul>
-              <li class="fragment">Content types and relationships</li>
-              <li class="fragment">Collections and assemblies</li>
-              <li class="fragment">Design elements</li>
-              <li class="fragment">Editorial roles, workflow</li>
-              <li class="fragment">Figure out the missing pieces in D8</li>
+              <li class="fragment">Build on Symfony Console</li>
+              <li class="fragment">Code generation</li>
+              <li class="fragment">System introspection</li>
+              <li class="fragment">Symfony Profiler</li>
             </ul>
+            <aside class="notes">
+              <ul>
+                <li>Some amazing new opportunities</li>
+              </ul>
+            </aside>
           </section>
           <section>
-            <h2>Oh, and... Content.</h2>
-            <ul>
-              <li class="fragment">In-place upgrades for content are <em>hard</em></li>
-              <li class="fragment">Contrib fields make it even trickier</li>
-              <li class="fragment">Most large sites rebuild and migrate</li>
+            <h2>The Console Team</h2>
+            <ul class="contributor-list">
+              <li><figure><img src="assets/latino-drupal/jmolivas.jpg" alt="Jesus Manuel Olivas" /><figcaption>Jesus Manuel Olivas</figcaption></figure></li>
+              <li><figure><img src="assets/latino-drupal/enzo.png" alt="Jose Eduardo García Torres" /><figcaption>Jose Eduardo García Torres</figcaption></figure></li>
+              <li><figure><img src="assets/latino-drupal/dmouse.jpg" alt="David Flores" /><figcaption>David Flores</figcaption></figure></li>
+              <li><figure><img src="assets/latino-drupal/omers.jpg" alt="Omar Aguirre" /><figcaption>Omar Aguirre</figcaption></figure></li>
             </ul>
-          </section>
-          <section>
-            <h2>Migrate!</h2>
-            <img class="fragment" src="assets/migration-kenya.jpg" alt="Migration" data-credit="http://www.flickr.com/photos/jameshammond/8733249464" />
-            <p class="fragment">Content migration system in core</p>
-            <p class="fragment">Migrate directly from Drupal 6 (Drupal 7 soon)</p>
-            <p class="fragment">Migrate from any CMS, DB, etc…</p>
           </section>
         </section>
+
         <section id="how-to-help">
           <section>
             <h2>Want Drupal 8 yet?</h2>
