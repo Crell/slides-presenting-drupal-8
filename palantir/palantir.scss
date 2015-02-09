@@ -187,3 +187,13 @@ q:after {
 p.bigtext {
   font-size: 150%;
 }
+
+.reveal {
+  ul + p, div + p {
+    margin-top: 1em;
+  }
+}
+
+img.screenshot {
+  border-radius: 5px;
+}

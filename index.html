@@ -104,8 +104,18 @@
             </aside>
           </section>
           <section>
+            [More stuff from Driesnote here]
+          </section>
+          <section>
             <p>Where does that leave the small player?</p>
-            <img class="fragment" src="assets/osi-symbol.png" style="width: 40%;" alt="The logo of the Open Source Initiative" data-credit="http://opensource.org/" />
+            <img class="fragment" src="assets/osi-symbol.png" style="width: 380px; height: 380px;" alt="The logo of the Open Source Initiative" data-credit="http://opensource.org/" />
+            <img class="fragment" src="assets/gnu.svg" style="width: 380px; height: 380px; background: #ffffff;  " alt="The Logo of the GNU Project" data-credit="http://gnu.org" />
+            <aside class="notes">
+              <ul>
+                <li>This is our response. This is our pushback.</li>
+                <li>Community is our secret weapon.</li>
+              </ul>
+            </aside>
           </section>
           <section>
             <blockquote>The right to innovate is not a privilege to be restricted to a tiny minority</blockquote>
@@ -113,13 +123,23 @@
             <p class="fragment roll-in">(A Drupal site, by the way...)</p>
             <aside class="notes">
               <ul>
+                <li>Article on OSS in Latin America</li>
                 <li>Open Source is how small players thrive</li>
-                <li>Needs to be approachable</li>
               </ul>
             </aside>
           </section>
+          <section>
+            <h2>Who uses Druapal?</h2>
+            <img class="fragment" style="width: 40%;" src="assets/whitehousegov.png" alt="Whitehouse.gov uses Drupal" />
+            <img class="fragment" style="width: 40%;" src="assets/occupy-wall-st-poster.jpg" alt="Occupy Wall St used Drupal" />
+            <p class="fragment">We use Drupal</p>
+          </section>
+          <section>
+            <h3>Needs to be approachable</h3>
+            <p class="fragment">Unusable tools are useless</p>
+          </section>
           <section data-state="large">
-            <img src="assets/drupal-8-logo.svg" alt="Drupal 8" data-credit="https://drupal.org/node/2119739" style="width: 650px ;" />
+            <img src="assets/drupal-8-logo.svg" alt="Drupal 8" data-credit="https://drupal.org/node/2119739" style="width: 600px ;" />
             <aside class="notes">
               <ul>
                 <li>Big changes</li>
@@ -190,6 +210,11 @@
                 <p>Everything is a response</p>
               </div>
             </div>
+            <aside class="notes">
+              <ul>
+                <li>Built for web services</li>
+              </ul>
+            </aside>
           </section>
           <section>
             <div style="width: 50%; float: left;">
@@ -241,7 +266,7 @@
           </section>
           <section>
             <h2>Views in core</h2>
-            <img src="assets/drupal8-views.png" alt="Views admin in Drupal 8" />
+            <img src="assets/drupal8-views.png" alt="Views admin in Drupal 8" class="screenshot" />
             <aside class="notes">
               <ul>
                 <li>Core blocks and content lists are customizable Views.</li>
@@ -251,7 +276,7 @@
           </section>
           <section>
             <h2>/admin/content</h2>
-            <img src="assets/drupal8-admin-content.png" alt="Content admin is now a view" />
+            <img src="assets/drupal8-admin-content.png" alt="Content admin is now a view" class="screenshot" />
             <aside class="notes">
               <ul>
                 <li>admin/content isn't an override, it's the actual view</li>
@@ -287,6 +312,7 @@
               <ul>
                 <li>How much of your life have you wasted?</li>
                 <li>How much of your client's money have you wasted?</li>
+                <li>Why should only "enterprise" users get good staging?</li>
               </ul>
             </aside>
           </section>
@@ -305,29 +331,34 @@
             </video>
           </section>
           <section>
-            <h2>Cleaner, themable installer</h2>
-            <img src="assets/d8-install.png" class="fragment" alt="The new Drupal 8 installer" />
-          </section>
-          <section>
             <h2>Translation in Drupal 7</h2>
-            <ul>
-              <li>List of modules</li>
+            <ul style="column-count: 2; -moz-column-count: 2; -webkit-column-count: 2;">
+              <li>admin_language</li>
+              <li>fallback_language_negotation</li>
+              <li>l10n_install</li>
+              <li>l10n_update</li>
+              <li>entity_translation</li>
+              <li>title</li>
+              <li>variable (suite)</li>
+              <li>i18n (suite)</li>
+              <li>i18nviews</li>
+              <li>webform_localization (et al)</li>
+              <li>stringoverrides</li>
+              <li>transliteration</li>
             </ul>
+            <p class="fragment" style="margin-top: -4em;">And it's still incomplete!</p>
           </section>
           <section>
             <img src="assets/facepalm-paris.jpg" alt="Facepalm" data-credit="http://en.wikipedia.org/wiki/File:Paris_Tuileries_Garden_Facepalm_statue.jpg" />
           </section>
           <section>
             <h2>Translation in Drupal 8</h2>
-            <p>3 modules... <span class="fragment">in Core</span></p>
-            <p>New video here?</p>
+            <p>Deeper, more robust system... <span class="fragment">in Core</span></p>
           </section>
           <section>
             <p class="bigtext">Everyone can build<br />multi-lingual sites from day 1</p>
           </section>
           <section>
-            <h2>Beefier localization system</h2>
-            <p>TODO: Flesh this out</p>
             <video preload="auto" class="stretch" controls data-autoplay>
               <source src="assets/translation.webm" data-credit="Dries Buytaert, Acquia" />
             </video>
@@ -338,34 +369,21 @@
             <h1>For content editors</h1>
           </section>
           <section>
-            <h2>Rich text editing</h2>
+            <h2>Rich editing experience</h2>
             <ul>
-              <li>CKEditor built in</li>
-              <li>Automatic configuration, sensible defaults</li>
-              <li>Content editing forms streamlined</li>
+              <li class="fragment">CKEditor built in</li>
+              <li class="fragment">Automatic configuration, sensible defaults</li>
+              <li class="fragment">Content editing forms streamlined</li>
             </ul>
           </section>
           <section>
-            <p>Needs new video</p>
             <video preload="auto" class="stretch" controls data-autoplay>
-              <source src="assets/edit-form-changes.webm" data-credit="Dries Buytaert, Acquia" />
+              <source src="assets/drupal-editing.webm" data-credit="Larry Garfield" />
             </video>
             <aside class="notes">
               <ul>
                 <li>Easier to use out of the box</li>
                 <li>Easier to use sell of the box</li>
-              </ul>
-            </aside>
-          </section>
-          <section>
-            <h2>In-Place Editing</h2>
-            <p>Needs new video</p>
-            <video preload="auto" class="stretch" controls data-autoplay>
-              <source src="assets/edit-in-place.webm" data-credit="Dries Buytaert, Acquia" />
-            </video>
-            <aside class="notes">
-              <ul>
-                <li>Good for selling</li>
                 <li>Called quick-edit for a reason...</li>
                 <li>Levels playing field for small shops, esp. vs proprietary</li>
               </ul>
@@ -427,11 +445,14 @@
           <section>
             <h2>…And a new help system</h2>
             <video preload="auto" class="stretch" controls data-autoplay>
-              <!--<source src="assets/d8-tour.webm" data-credit="Larry Garfield" />-->
+              <source src="assets/d8-tour.webm" data-credit="Larry Garfield" />
             </video>
-          </section>
-          <section>
-            <h2>Smoother, better,<br/> more delicious</h2>
+            <aside class="notes">
+              <ul>
+                <li>Version controlled text files</li>
+                <li>For modules or sites</li>
+              </ul>
+            </aside>
           </section>
         </section>
         <section id="for-themers" data-primary-speaker="larry">
