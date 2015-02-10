@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
 
-    <title>Drupal 8 for the small fry</title>
+    <title>Drupal and Us</title>
 
     <meta name="author" content="Larry Garfield">
 
@@ -75,6 +75,17 @@
       max-height: 80%;
     }
 
+    div.big-company-list {
+      display: flex;
+      flex-flow: row;
+      flex-wrap: wrap;
+    }
+
+    div.big-company-list img {
+      max-width: 200px
+      /*max-height: 200px;*/
+    }
+
     .struck {
       text-decoration: line-through;
     }
@@ -89,23 +100,32 @@
       <div class="slides">
         <section id="title-and-intro">
           <section>
-            <h1>Drupal 8 for the small fry</h1>
-            <p>
-              <small>Presented by <a href="http://www.garfieldtech.com/">Larry Garfield</a> / <a href="http://twitter.com/Crell">@Crell</a></small>
-            </p>
+            <h1>Drupal and Us</h1>
           </section>
           <section>
-            <h1>The Big Web</h1>
+            <img src="assets/driesnote-bogota.jpg" style="width: 60%;" alt="A Dark Driesnote" />
             <aside class="notes">
               <ul>
-                <li>Dries' keynote kind of depressing</li>
-                <li>Big web for big players</li>
-                <li>Fancy features require big investment</li>
+                <li>Spoke about push-web</li>
+                <li>Personalization, big data</li>
+                <li>Systems that know about us</li>
               </ul>
             </aside>
           </section>
           <section>
-            [More stuff from Driesnote here]
+            <div class="big-company-list">
+              <img src="assets/facebook-logo.svg" alt="Facebook" />
+              <img src="assets/google-logo.svg" alt="Google" />
+              <img src="assets/amazon-logo.svg" alt="Amazon" />
+              <img src="assets/apple-logo.png" alt="Apple" />
+            </div>
+            <aside class="notes">
+              <ul>
+                <li>Push web cannot be just for them</li>
+                <li>Big web for big players</li>
+                <li>Fancy features require big investment</li>
+              </ul>
+            </aside>
           </section>
           <section>
             <p>Where does that leave the small player?</p>
@@ -115,12 +135,21 @@
               <ul>
                 <li>This is our response. This is our pushback.</li>
                 <li>Community is our secret weapon.</li>
+                <li>Tools built for sharing.</li>
+              </ul>
+            </aside>
+          </section>
+          <section>
+            <img src="assets/druplicon.svg" style="width: 40%; border: 0; background: transparent; border: 0;" alt="Druplicon" />
+            <aside class="notes">
+              <ul>
+                <li>Tools like Drupal</li>
               </ul>
             </aside>
           </section>
           <section>
             <blockquote>The right to innovate is not a privilege to be restricted to a tiny minority</blockquote>
-            <p>&mdash;<a href="http://www.freesoftwaremagazine.com/articles/latin_america">Free Software Magazine</a></p>
+            <p>&mdash;<a href="http://www.freesoftwaremagazine.com/articles/latin_america">Free Software Magazine</a>, 2005</p>
             <p class="fragment roll-in">(A Drupal site, by the way...)</p>
             <aside class="notes">
               <ul>
@@ -130,9 +159,9 @@
             </aside>
           </section>
           <section>
-            <h2>Who uses Druapal?</h2>
-            <img class="fragment" style="width: 40%;" src="assets/whitehousegov.png" alt="Whitehouse.gov uses Drupal" />
-            <img class="fragment" style="width: 40%;" src="assets/occupy-wall-st-poster.jpg" alt="Occupy Wall St used Drupal" />
+            <h2>Who uses Drupal?</h2>
+            <img class="fragment" style="width: 49%;" src="assets/whitehousegov.png" alt="Whitehouse.gov uses Drupal" />
+            <img class="fragment" style="width: 49%; background: #ffffff" src="assets/99-occupy-logo.png" alt="Occupy Wall St used Drupal" data-credit="http://www.ecliptic.ch/99.html" />
             <p class="fragment">We use Drupal</p>
           </section>
           <section>
@@ -169,6 +198,7 @@
             <aside class="notes">
               <ul>
                 <li>Drupal 8 is the best thing to happen for independent developers</li>
+                <li>Same tools a big enterprise, in your hands.</li>
               </ul>
             </aside>
           </section>
@@ -289,6 +319,7 @@
             <h2>Drupal 8</h2>
             <ul>
               <li class="fragment">Content modeling</li>
+              <li class="fragment">Content editing</li>
               <li class="fragment">Content assembly</li>
               <li class="fragment">Content delivery</li>
             </ul>
@@ -422,7 +453,6 @@
             </aside>
           </section>
           <section>
-            <p>Needs new video</p>
             <video preload="auto" class="stretch" controls data-autoplay>
               <source src="assets/drupal8-accessibility.m4v" data-credit="Dries Buytaert, Acquia" />
             </video>
@@ -693,7 +723,8 @@
               <ul>
                 <li>Fields make sense</li>
                 <li>Nodes/entities are for-reals objects w/ interfaces</li>
-                <li>Fiel, widgets, formatters are plugins, like everything else</li>
+                <li>Field, widgets, formatters are plugins, like everything else</li>
+                <li>Session later today</li>
               </ul>
             </aside>
           </section>
@@ -811,11 +842,11 @@
           </section>
           <section>
             <h3>We are&hellip;</h3>
-            [picture of DrupalCamp Mumbai]
+            <img src="assets/drupalcamp-mumbai-2015.png" alt="DrupalCamp Mumbai 2015" />
           </section>
           <section>
             <h3>We are&hellip;</h3>
-            [picture of DrupalSouth]
+            <img src="assets/drupal-south-wellington-2014.jpg" alt="Drupal South Wellington 2014" />
           </section>
           <section>
             <h3>We are&hellip;</h3>
@@ -827,12 +858,15 @@
           </section>
           <section>
             <h3>We are&hellip;</h3>
-            [picture of Sunshine PHP]
+            <img src="assets/sunshinephp2015-speakers.jpg" alt="Speakers from Sunshine PHP 2015" />
             <aside class="notes">
               <ul>
                 <li>Not Drupalers, but Drupal is PHP</li>
               </ul>
             </aside>
+          </section>
+          <section>
+            <img src="assets/elephpant-alliance.jpg" style="width: 80%" alt="PHP is the web" data-credit="http://www.flickr.com/photos/dragonbe/3411273755/" />
           </section>
           <section>
             <p>Code Contributors to Drupal 8</p>
@@ -853,6 +887,7 @@
                 <li>Docs</li>
                 <li>Helped in IRC, forum, Stack Overflow</li>
                 <li>Helped in person</li>
+                <li>Built a Drupal site</li>
               </ul>
             </aside>
           </section>
