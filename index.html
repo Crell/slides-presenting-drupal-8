@@ -80,11 +80,15 @@
       display: flex;
       flex-flow: row;
       flex-wrap: wrap;
+      flex-basis: 100%;
+      align-items: center;
+      text-align: center;
     }
 
     div.big-company-list img {
-      max-width: 200px
-      /*max-height: 200px;*/
+      margin-left: 20px;
+      margin-right: 20px;
+      max-width: 200px;
     }
 
     .struck {
@@ -92,8 +96,6 @@
     }
 
     </style>
-
-    <script src="palantir/countup.js"></script>
 
   </head>
   <body>
@@ -103,6 +105,8 @@
           <section>
             <h1>Drupal and Us</h1>
           </section>
+        </section>
+        <section>
           <section>
             <img src="assets/driesnote-bogota.jpg" style="width: 60%;" alt="A Dark Driesnote" />
             <aside class="notes">
@@ -117,7 +121,7 @@
             <div class="big-company-list">
               <img src="assets/facebook-logo.svg" alt="Facebook" />
               <img src="assets/google-logo.svg" alt="Google" />
-              <img src="assets/amazon-logo.svg" alt="Amazon" />
+              <img src="assets/amazon-logo.svg" style="background: #ffffff" alt="Amazon" />
               <img src="assets/apple-logo.png" alt="Apple" />
             </div>
             <aside class="notes">
@@ -206,7 +210,7 @@
         </section>
         <section id="the-new-hotness">
           <section>
-            <p class="bigtext">Drupal 8 is a new generation<br />PHP framework/CMS</p>
+            <p class="bigtext">Drupal 8 is a new generation<br />PHP Platform</p>
             <aside class="notes">
               <ul>
                 <li>PHP Renaissance</li>
@@ -851,7 +855,7 @@
           </section>
           <section>
             <h3>We are&hellip;</h3>
-            <img src="assets/drupalcon-amsterdam.jpg" alt="DrupalCon Amsterdam" />
+            <img src="assets/drupalcon-amsterdam.jpg" style="width: 65%" alt="DrupalCon Amsterdam" />
           </section>
           <section>
             <h3>We are&hellip;</h3>
@@ -867,6 +871,7 @@
             </aside>
           </section>
           <section>
+            <h3>We are&hellip;</h3>
             <img src="assets/elephpant-alliance.jpg" style="width: 80%" alt="PHP is the web" data-credit="http://www.flickr.com/photos/dragonbe/3411273755/" />
           </section>
           <section>
